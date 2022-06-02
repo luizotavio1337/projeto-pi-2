@@ -79,9 +79,18 @@
             <img width="" height="180" src="img/calculadora.png" alt="imagem">
             <div class="conteudo-produto">
                 <h2>Calculadora de mesa (bat/solar/8 digitos) cinza</h2>
-                <h3>Quantidade:1</h3>
-                <h3  style="color: green;">Item disponível</h3>
-                <h3 style="color: red;">Remover</h3>
+                <div>
+                    <select name="quantidade">
+                        <option value="1" selected>Qtd: 1</option>
+                        <option value="2">Qtd: 2</option>
+                        <option value="3">Qtd: 3</option>
+                        <option value="4">Qtd: 4</option>
+                        <option value="5">Qtd: 5</option>
+                    </select>
+                </div>
+                <br>
+                <h3  style="color: green; font-size: 20px;">Item disponível</h3>
+                <button class="button-remover">Remover</button>
             </div>
         </div>
       <div class="info-preco">
@@ -109,9 +118,17 @@
             <img width="" height="180" src="img/perfurador-de-papel.jpg" alt="imagem">
             <div class="conteudo-produto">
                 <h2>Perfurador de papel 02 furos p/10 fls Easy Office</h2>
-                <h3>Quantidade:1</h3>
-                <h3  style="color: green;">Item disponível</h3>
-                <h3 style="color: red;">Remover</h3>
+                
+                <select name="quantidade">
+                    <option value="1" selected>Qtd:1</option>
+                    <option value="2">Qtd:2</option>
+                    <option value="3">Qtd:3</option>
+                    <option value="4">Qtd:4</option>
+                    <option value="5">Qtd:5</option>
+                </select>
+                <br>  <br>
+                <h3  style="color: green; font-size: 20px;">Item disponível</h3>
+                <button class="button-remover">Remover</button>
             </div>
         </div>
       <div class="info-preco">
@@ -135,8 +152,89 @@
     </div>
     <div class="finalizar-pedido">
         <p class="subtotal">Subtotal (2 itens): R$92,00</p>
-        <a href="checkout.html" class="myButton">Finalizar pedido</a>
+        <a href="checkout.html" class="myButton">Fechar pedido</a>
     </div>
+</div>
+
+<br> <br> <br> <br>
+
+<div class="container-fluid">
+    <footer class="bg-rodape">
+        <div class="">
+            <div class="d-flex justify-content-center">
+                <ul class="pr-5 pt-2 ml-5 row footer_style">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5>Institucional</h5>
+                        <ul class="footer-alinhamento nav flex-column">
+                            <li class="nav-item mb-2"><a class="lista_footer" href="sobre_nos.hmtl">Sobre nós</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="trabalhe_conosco.hmtl">Trabalhe
+                                    Conosco</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="fale_conosco.html">Fale
+                                    Conosco</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="mapa_do_site.html">Mapa do
+                                    Site</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer"
+                                    href="servicos_check_lista.html">Serviços
+                                    Check Lista</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5>Dúvidas</h5>
+                        <ul class="footer-alinhamento nav flex-column teste">
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Como funciona a
+                                    loja</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Cadastro e
+                                    contas</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Devolução e
+                                    trocas</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Segurança</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Política de
+                                    Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5>Redes Sociais</h5>
+                        <ul class="footer-alinhamento nav flex-column">
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/instagram.png">
+                                    Instagram</a></li>
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/facebook.png">
+                                    Facebook</a>
+                            </li>
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/twitter.png">
+                                    Twitter</a>
+                            </li>
+                            <li class="ms-1 "><a class="lista_footer mb-2" href="#"><img src="img/youtube.png">
+                                    Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5>Formas de Pagamento</h5>
+                        <ul class="footer-alinhamento mb-5 nav flex-column">
+                            <li class="lista_footer mb-2">Cartões de crédito</li>
+                            <li class="lista_footer mb-2">Boleto bancário</li>
+                            <li class="lista_footer mb-2">PIX</li>
+                        </ul>
+                    </div>
+                    <div class="Linha-rodape"></div>
+                    <div class="pt-3 mt-3 container footer_end">
+                        <h6>Lista Check - CNPJ: 23.354.848/0001-14 Endereço: Rua Major Gote, 808 -
+                            Caiçaras, Patos de Minas - MG</h6>
+                        <br>
+                        <h6>Telefone de contato: (34) 3823-0300</h6>
+                        <span class="d-flex justify-content-end "><img src="img/icon.png" width="50" height="50"
+                                alt="..."></span>
+                    </div>
+            </div>
+            </ul>
+        </div>
+    </footer>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
