@@ -98,4 +98,21 @@ h3{
 	top:1px;
 }
 
+.button-remover{
+    color: red;
+    border: none;
+    background-color: white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+
+.button-remover:hover{
+    outline: auto;
+
+}
+
+
+
 

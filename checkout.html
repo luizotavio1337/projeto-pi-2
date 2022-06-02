@@ -5,50 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalizar Pedido</title>
-    <link rel="stylesheet" href="estilo-checkout.css">
+    <link rel="stylesheet" href="css/estilo-checkout.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Tag para adicionar favicon(Logo ao lado do título da página) -->
-    <link rel="shortcut icon" href="imagens/fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand mt-10 mb-10" href="index.html">
+                    <div class="H_div">
+                        <span class="c_lista">Lista</span><br>
+                        <span class="c_check">Check</span>
+                        <img src="img/fav-icon.png" alt="Icone Lista Check" width="50" height="50" class="img_logo">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarcollapse" style>
+
+                    <!--Barra de pesquisa-->
+                    <form action="LINKTESTE.php" method="post" class="d-inline wd-search d-flex">
+                        <div class="dropdown">
+                            <!--Selecionar Categorias-->
+                            <button
+                                class="d-inline btn-outline-menu-navbar btn_cor btn_border btn dropdown-toggle ms-0 me-0"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Papelaria
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                                <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                                <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                            </ul>
+                        </div>
+                        <input value="" class="btn-outline-menu-navbar form_border form-control ms-1" type="search"
+                            placeholder="Pesquise aqui o seu Produto" aria-label="pesquisar">
+                        <button class="btn-outline-menu-navbar btn_border_search btn_search btn-outline-search"
+                            type="submit">
+                            <img src="img/pesquisa.png" alt="imagem botão de pesquisa / search button image">
+                        </button>
+                    </form>
+                    <!--Login,pedidos,carrinho-->
+                    <ul class="hover_container navbar-nav me-auto mb-2 mb-lg-0 nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="carrinho.html">Carrinho</a>
+                        </li>
+                        <li><a class="nav-link bold" href="carrinho.html"><img src="img/carrinho.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+<br>
+<div class="tudo">
     <div class="titulos">
-        <img src="imagens/fav-icon.png" alt="">
+        <img style="width: 50px;" src="img/fav-icon.png" alt="">
         <h1>Finalizar Pedido</h1>
     </div>
     <hr>
     <br> 
     <div class="form-pagamento">
         <form>
-            <div>
+            <div class="pagamento">
                 <h2>Selecione uma forma de pagamento:</h2>
                 <hr>
+                <h3 style="font-size: 20px; text-align: left;">Pix</h3>
                 <input type="radio" name="formas">
-                <label for="form-pagamento">Cartão de crédito</label>
+                <label for="form-pagamento"><img width="30px" src="img/pix.png" alt="">  Mais rápido e fácil!</label>
                 <br>
+                <hr>
+                <h3 style="font-size: 20px; text-align: left;">Cartão</h3>
                 <input type="radio" name="formas">
-                <label for="form-pagamento">Pix</label>
+                <label for="form-pagamento"><img width="30px" src="img/cartao.png" alt="">  Parcele sua compra sem juros!</label>
                 <br>
+                <hr>
+                <h3 style="font-size: 20px; text-align: left;">Boleto</h3>
                 <input type="radio" name="formas">
-                <label for="form-pagamento">Boleto bancário </label>
+                <label for="form-pagamento"><img width="55px" src="img/boleto-pagamento.png" alt="">Pague sua compra no dinheiro.</label>
                 <br>
             </div>
         </form>
     </div>
     <br> <br>
     <div class="endereco">
-            <div>
+            <div class="infos">
                 <h2>Endereço da entrega:</h2>
                 <hr>
-                <input type="text" placeholder="Cidade">
-                <br>
-                <input type="text" placeholder="Bairro">
-                <br>
-                <input type="text" placeholder="Rua">
-                <br>
-                <input type="number" placeholder="Número">
-                <br>
-                <input type="text" placeholder="Cep" required pattern="\d{5}-\d{3}">
-                <br>
-                <input type="text" placeholder="Complemento(opcional)">
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="text" placeholder="Cidade">
+                <br> <br>
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="text" placeholder="Bairro">
+                <br> <br>
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="text" placeholder="Rua">
+                <br> <br>
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="number" placeholder="Número">
+                <br> <br>
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="text" placeholder="Cep" required pattern="\d{5}-\d{3}">
+                <br> <br>
+                <input style="border-top: 0px; border-left: 0px; border-right: 0px;" type="text" placeholder="Complemento(opcional)">
                 <br>
                 <br>
                 <div class="salva-end">
@@ -57,5 +124,94 @@
                 </div>
             </div>
     </div>
+    
+    <br> <br>
+
+    <div class="botao">
+
+        <a href="#" class="myButton">Finalizar pedido</a>
+
+    </div>
+    <br> <br> <br> <br>
+
+    <div class="container-fluid">
+        <footer class="bg-rodape">
+            <div class="">
+                <div class="d-flex justify-content-center">
+                    <ul class="pr-5 pt-2 ml-5 row footer_style">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Institucional</h5>
+                            <ul class="footer-alinhamento nav flex-column">
+                                <li class="nav-item mb-2"><a class="lista_footer" href="sobre_nos.hmtl">Sobre nós</a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="trabalhe_conosco.hmtl">Trabalhe
+                                        Conosco</a></li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="fale_conosco.html">Fale
+                                        Conosco</a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="mapa_do_site.html">Mapa do
+                                        Site</a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="lista_footer"
+                                        href="servicos_check_lista.html">Serviços
+                                        Check Lista</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Dúvidas</h5>
+                            <ul class="footer-alinhamento nav flex-column teste">
+                                <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Como funciona a
+                                        loja</a></li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Cadastro e
+                                        contas</a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Devolução e
+                                        trocas</a>
+                                </li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Segurança</a></li>
+                                <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Política de
+                                        Privacidade</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Redes Sociais</h5>
+                            <ul class="footer-alinhamento nav flex-column">
+                                <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/instagram.png">
+                                        Instagram</a></li>
+                                <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/facebook.png">
+                                        Facebook</a>
+                                </li>
+                                <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/twitter.png">
+                                        Twitter</a>
+                                </li>
+                                <li class="ms-1 "><a class="lista_footer mb-2" href="#"><img src="img/youtube.png">
+                                        Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5>Formas de Pagamento</h5>
+                            <ul class="footer-alinhamento mb-5 nav flex-column">
+                                <li class="lista_footer mb-2">Cartões de crédito</li>
+                                <li class="lista_footer mb-2">Boleto bancário</li>
+                                <li class="lista_footer mb-2">PIX</li>
+                            </ul>
+                        </div>
+                        <div class="Linha-rodape"></div>
+                        <div class="pt-3 mt-3 container footer_end">
+                            <h6>Lista Check - CNPJ: 23.354.848/0001-14 Endereço: Rua Major Gote, 808 -
+                                Caiçaras, Patos de Minas - MG</h6>
+                            <br>
+                            <h6>Telefone de contato: (34) 3823-0300</h6>
+                            <span class="d-flex justify-content-end "><img src="img/icon.png" width="50" height="50"
+                                    alt="..."></span>
+                        </div>
+                </div>
+                </ul>
+            </div>
+        </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 </html>
