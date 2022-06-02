@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="estilo-checkout.css">
+    <!-- Tag para adicionar favicon(Logo ao lado do título da página) -->
+    <link rel="shortcut icon" href="imagens/fav-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="titulos">
+        <img src="imagens/fav-icon.png" alt="">
+        <h1>Finalizar Pedido</h1>
+    </div>
+    <hr>
+    <br> 
+    <div class="form-pagamento">
+        <form>
+            <div>
+                <h2>Selecione uma forma de pagamento:</h2>
+                <hr>
+                <input type="radio" name="formas">
+                <label for="form-pagamento">Cartão de crédito</label>
+                <br>
+                <input type="radio" name="formas">
+                <label for="form-pagamento">Pix</label>
+                <br>
+                <input type="radio" name="formas">
+                <label for="form-pagamento">Boleto bancário </label>
+                <br>
+            </div>
+        </form>
+    </div>
+    <br> <br>
+    <div class="endereco">
+            <div>
+                <h2>Endereço da entrega:</h2>
+                <hr>
+                <input type="text" placeholder="Cidade">
+                <br>
+                <input type="text" placeholder="Bairro">
+                <br>
+                <input type="text" placeholder="Rua">
+                <br>
+                <input type="number" placeholder="Número">
+                <br>
+                <input type="text" placeholder="Cep" required pattern="\d{5}-\d{3}">
+                <br>
+                <input type="text" placeholder="Complemento(opcional)">
+                <br>
+                <br>
+                <div class="salva-end">
+                    <input type="checkbox" name="end">
+                    <label for="endereco">Salvar endereço</label>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

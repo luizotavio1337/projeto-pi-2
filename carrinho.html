@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="css/estilo-carrinho.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Tag para adicionar favicon(Logo ao lado do título da página) -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand mt-10 mb-10" href="index.html">
+                    <div class="H_div">
+                        <span class="c_lista">Lista</span><br>
+                        <span class="c_check">Check</span>
+                        <img src="img/fav-icon.png" alt="Icone Lista Check" width="50" height="50" class="img_logo">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarcollapse" style>
+
+                    <!--Barra de pesquisa-->
+                    <form action="LINKTESTE.php" method="post" class="d-inline wd-search d-flex">
+                        <div class="dropdown">
+                            <!--Selecionar Categorias-->
+                            <button
+                                class="d-inline btn-outline-menu-navbar btn_cor btn_border btn dropdown-toggle ms-0 me-0"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Papelaria
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                                <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                                <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                            </ul>
+                        </div>
+                        <input value="" class="btn-outline-menu-navbar form_border form-control ms-1" type="search"
+                            placeholder="Pesquise aqui o seu Produto" aria-label="pesquisar">
+                        <button class="btn-outline-menu-navbar btn_border_search btn_search btn-outline-search"
+                            type="submit">
+                            <img src="img/pesquisa.png" alt="imagem botão de pesquisa / search button image">
+                        </button>
+                    </form>
+                    <!--Login,pedidos,carrinho-->
+                    <ul class="hover_container navbar-nav me-auto mb-2 mb-lg-0 nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="carrinho.html">Carrinho</a>
+                        </li>
+                        <li><a class="nav-link bold" href="carrinho.html"><img src="img/carrinho.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+<br>
+    <div class="titulos">
+        <h1>Carrinho de compras:</h1>
+        <h1 style="font-size: 25px;">Preços</h1>
+    </div>
+    <div class="carrinho-de-compras">
+        <div class="info-produto">
+            <img width="" height="180" src="img/calculadora.png" alt="imagem">
+            <div class="conteudo-produto">
+                <h2>Calculadora de mesa (bat/solar/8 digitos) cinza</h2>
+                <h3>Quantidade:1</h3>
+                <h3  style="color: green;">Item disponível</h3>
+                <h3 style="color: red;">Remover</h3>
+            </div>
+        </div>
+      <div class="info-preco">
+        <h3 style="    font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;">R$56,00</h3>
+        <h3 style="    font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;">á vista ou em até 4x de</h3>
+        <h3 style="    font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;">R$14,00 sem juros</h3>
+      </div>
+    </div>
+    <br> <br>
+
+    <div class="carrinho-de-compras">
+        <div class="info-produto">
+            <img width="" height="180" src="img/perfurador-de-papel.jpg" alt="imagem">
+            <div class="conteudo-produto">
+                <h2>Perfurador de papel 02 furos p/10 fls Easy Office</h2>
+                <h3>Quantidade:1</h3>
+                <h3  style="color: green;">Item disponível</h3>
+                <h3 style="color: red;">Remover</h3>
+            </div>
+        </div>
+      <div class="info-preco">
+        <h3 style=" font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;" >R$36,90</h3>
+        <h3 style="    font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;">á vista ou em até 3x de</h3>
+        <h3 style="    font-family: times;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        color: black;">R$12,30 sem juros</h3>
+      </div>
+    </div>
+    </div>
+    <div class="finalizar-pedido">
+        <p class="subtotal">Subtotal (2 itens): R$92,00</p>
+        <a href="checkout.html" class="myButton">Finalizar pedido</a>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

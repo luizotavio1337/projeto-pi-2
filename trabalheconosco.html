@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista Check0">
+    <meta name="keywords" content="Projeto PI, Papelaria, listas, vendas">
+    <meta name="author" content="Grupo PI">
+    <title>Lista Check</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet"href="trabalheconosco.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+                <a class="navbar-brand mt-10 mb-10" href="index.html">
+                    <div class="H_div">
+                        <span class="c_lista">Lista</span><br>
+                        <span class="c_check">Check</span>
+                        <img src="img/fav-icon.png" alt="Icone Lista Check" width="50" height="50" class="img_logo">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse"
+                    aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarcollapse" style>
+
+                    <!--Barra de pesquisa-->
+                    <form action="LINKTESTE.php" method="post" class="d-inline wd-search d-flex">
+                        <div class="dropdown">
+                            <!--Selecionar Categorias-->
+                            <button
+                                class="d-inline btn-outline-menu-navbar btn_cor btn_border btn dropdown-toggle ms-0 me-0"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Papelaria
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                                <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                                <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                            </ul>
+                        </div>
+                        <input value="" class="btn-outline-menu-navbar form_border form-control ms-1" type="search"
+                            placeholder="Pesquise aqui o seu Produto" aria-label="pesquisar">
+                        <button class="btn-outline-menu-navbar btn_border_search btn_search btn-outline-search"
+                            type="submit">
+                            <img src="img/pesquisa.png" alt="imagem botão de pesquisa / search button image">
+                        </button>
+                    </form>
+                    <!--Login,pedidos,carrinho-->
+                    <ul class="hover_container navbar-nav me-auto mb-2 mb-lg-0 nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="carrinho.html">Carrinho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="carrinho.html"><img src="img/carrinho.png"></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <div class="container-fluid menucateg">
+            <ul class="nav nav-fill">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-menu-navbar dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownmenu1">
+                        <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="papeis.html">Papeis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="canetas.html">Canetas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="lapiseiras.html">Lapiseiras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="listas.html">Listas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="cadernos.html">Cadernos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="escolar.html">Escolar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="escritorio.html">Escritório</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="escrita.html">Escrita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="papeis.html">Papéis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="eletronicos.html">Eletrônicos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <img src="img/Trabalhe Cnosco.png" height="50%" width="100%">
+    <h1>Nosso Negócio📙</h1>
+    <p>Comercializamos mais de mil itens das <br>
+        melhores marcas e diversas categorias <br>
+        como Escolar, Escritório, Organização, <br>
+        Informática, Escrita,</p>
+        <h2>Missão</h2>
+        <p>Oferecer produtos de qualidade,<br>
+            economizar o maior tempo possivel  <br>
+            e respeito ao cliente.</p>
+            <h2>Visão</h2>
+            <p>Ser uma empresa com compromisso em oferecer o melhor produto,<br>
+                e o maior desempenho possivel, para economizar seu tempo. <br>
+            </p>
+        </div>
+        <div class="container-fluid">
+            <footer class="py">
+    
+                <ul class="row footer_style">
+                    <div class="col-3">
+                        <h5>Institucional</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a class="lista_footer"  href="sobrenós.html" target="black">Sobre nós</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="trabalheconosco.html" target="black">Trabalhe
+                                    Conosco</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="fale_conosco.html">Fale Conosco</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="mapa_do_site.html">Mapa do Site</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="serviçoslistacheck.html" target="black">Serviços
+                                    Check Lista</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5>Dúvidas</h5>
+                        <ul class="nav flex-column teste">
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Como funciona nossa
+                                    loja</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Cadastro e contas</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Devolução e trocas</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Segurança</a></li>
+                            <li class="nav-item mb-2"><a class="lista_footer" href="duvidas.html">Política de
+                                    Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5>Redes Sociais</h5>
+                        <ul class="nav flex-column">
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/instagram.png" width="24"
+                                        height="24"> Instagram</a></li>
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/facebook.png" width="24"
+                                        height="24"> Facebook</a></li>
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/twitter.png" width="24"
+                                        height="24"> Twitter</a></li>
+                            <li class="ms-1"><a class="lista_footer mb-2" href="#"><img src="img/youtube.png" width="24"
+                                        height="24"> Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5>Formas de Pagamento</h5>
+                        <ul class="nav flex-column">
+                            <li class="lista_footer mb-2">Cartões de crédito</li>
+                            <li class="lista_footer mb-2">Boleto bancário</li>
+                            <li class="lista_footer mb-2">PIX</li>
+                        </ul>
+                    </div>
+    
+                    <div class="d-flex justify-content-between py my border-top container-fluid footer_end">
+                        <p>Lista Check - CNPJ: 23.354.848/0001-14 Endereço: Rua Major Gote, 808 -
+                            Caiçaras, Patos de Minas - MG</p>
+                        <p>Telefone de contato: (34) 3823-0300</p>
+                        <img src="img/icon.png" width="50" height="50" alt="...">
+                    </div>
+                </ul>
+            </footer>
+        </div>
+
+    
+</body>
+</html>

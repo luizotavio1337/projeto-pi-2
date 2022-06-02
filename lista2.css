@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding-top: 100px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #fff;
+}
+
+.imgcarr {
+    padding-bottom: 5px;
+}
+
+.bg-header {
+    background-color: #152c3e;
+}
+.c_lista {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.3em;
+}
+
+.c_check {
+    color: #febd69;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 0.20em;
+}
+
+.img_logo {
+    margin-top: -2em;
+    margin-left: -0.1em;
+    line-height: 0.10em;
+}
+
+.H_div {
+    line-height: 1.2em;
+    margin-top: -0.5em;
+}
+
+.btn_search {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #febd69;
+    border: 1px solid #febd69;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form_border {
+    border-radius: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .wd-search {
+        width: 100%;
+    }
+}
+
+.btn_border {
+    border-radius: 1em !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height: 44px;
+}
+
+.btn_border_search {
+    border-radius: 1em !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btn_cor {
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #000 !important;
+}
+
+/* Hover do fazer login,pedidos,carrinho */
+.hover_container>li>a {
+    color: #fff !important;
+
+}
+
+.hover_container>li>a:hover {
+    color: #febd69 !important;
+
+}
+
+.btn-outline-menu-navbar:focus {
+    box-shadow: 0 0 0 0.25rem #febd697a !important;
+}
+
+.carrosel1 {
+    margin: 5px !important;
+    margin-top: 0px !important;
+
+}
+
+.row {
+    background-color: #37475a !important;
+    color: white !important;
+    padding: 15px !important;
+    padding-top: 30px !important;
+    font-size: 15pt !important;
+    font-weight: bold !important;
+
+}
+
+.btn_cor2 {
+    color: white !important;
+    background-color: #37475a !important;
+    font-size: 15pt !important;
+    font-weight: bold !important;
+
+}
+
+.menucateg {
+    background-color: #37475a !important;
+    padding: 5px;
+}
+
+.menucateg>ul>li>a {
+    color: white !important;
+    background-color: #37475a !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    
+}
+
+.menucateg>ul>li>a:hover {
+    color: #febd69 !important;
+}
+
+.navbar{
+    padding-bottom: 1rem !important;
+}

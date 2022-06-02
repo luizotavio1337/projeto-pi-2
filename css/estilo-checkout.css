@@ -1,0 +1,65 @@
+.titulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family:times;
+    font-size:40px;
+    font-weight:bold;
+    font-style: normal;
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family:times;
+    font-size:30px;
+    font-weight:bold;
+    font-style: normal;
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-pagamento{
+    border: 1px solid #2e2e2e;
+    border-radius: 5%;
+    border-width: 1px;
+    width: 500px;
+    height: 200px;
+    font-family: times;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 18px 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.endereco{
+    border: 1px solid #2e2e2e;
+    border-radius: 5%;
+    border-width: 1px;
+    width: 500px;
+    height: 320px;
+    font-family: times;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 18px 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.salva-end{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
